@@ -13,7 +13,7 @@ from api.models.github_user import (
 
 router = APIRouter(prefix='/users', tags=['Proxy API for GitHub users'])
 
-SINCE = dict(example=1, gt=0)
+SINCE = dict(example=1)
 USERNAME = dict(example="user_123", min_length=1)
 RESPONSE_404 = {404: {"description": "Not found"}}
 RESPONSE_503 = {503: {"description": "Service Unavailable"}}
