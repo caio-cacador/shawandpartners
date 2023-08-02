@@ -6,14 +6,13 @@ from api.models.github_user import GithubUserModel, GithubUserReposModel
 from api.exceptions.base import ServiceUnavailableError, UserNotFoundError
 
 
-GITHUB_BASE_URL = 'GITHUB_API_BASE_URL'
-GITHUB_AUTH_TOKEN = 'GITHUB_AUTH_TOKEN'
+GITHUB_AUTH_TOKEN = "GITHUB_AUTH_TOKEN"
 
 
 class GithubConnection:
     
     def __init__(self) -> None:
-        self.__base_url = os.getenv(GITHUB_BASE_URL, 'https://api.github.com') # aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        self.__base_url = "https://api.github.com"
         self.__auth_token = os.getenv(GITHUB_AUTH_TOKEN)
     
     @property
