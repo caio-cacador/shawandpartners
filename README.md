@@ -31,7 +31,7 @@ set GITHUB_AUTH_TOKEN=your_token_here
 pip install -r requirements.txt
 ```
 
-4. Then, run the the application:
+4. Then, run the application:
 
 Example using uvicorn:
 
@@ -56,3 +56,17 @@ http://localhost:8000/docs
 or
 
 http://localhost:8000/redoc/
+
+### Instructions for running the tests
+
+1. first, make sure you are at the root of the project.
+
+2. Second, install the dev requirements:
+```sh
+pip install -r requirements_dev.txt
+```
+
+3. Then, run the tests: 
+```sh
+pytest ./tests/
+```
