@@ -1,7 +1,7 @@
 import json
 from http import HTTPStatus
 from tests.system_tests.common import CommonTestCase
-from tests.fixtures.github_users import RESPONSE_GET_USER_REPOS
+from tests.fixtures.github_user_repos import RESPONSE_GET_USER_REPOS
 
 
 class TestGetUserRepos(CommonTestCase):

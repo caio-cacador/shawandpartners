@@ -1,7 +1,7 @@
 import json
 from http import HTTPStatus
 from tests.system_tests.common import CommonTestCase
-from tests.fixtures.github_users import RESPONSE_GET_USER_DETAILS
+from tests.fixtures.github_user_details import RESPONSE_GET_USER_DETAILS
 
 
 class TestGetUserDetails(CommonTestCase):
