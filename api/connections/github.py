@@ -13,7 +13,7 @@ class GithubConnection:
     
     def __init__(self) -> None:
         self.__base_url = "https://api.github.com"
-        self.__auth_token = os.getenv(GITHUB_AUTH_TOKEN)
+        self.__auth_token = f"Bearer {os.getenv(GITHUB_AUTH_TOKEN)}"
     
     @property
     def __headers(self):
